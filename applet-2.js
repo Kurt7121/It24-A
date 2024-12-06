@@ -33,5 +33,17 @@ class LeafletMap {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(this.map);
     }
+    addMarker(lat, long, message) {
+        const marker = L.marker([lat, long]).addTo(this.map);
+        this.markerCounts[message] = (this.markerCounts[message] || 0) + 1;
+        this.updateMarkerPopup(marker, message);
+
+        marker.on('click', () => {
+            this.markerCounts[message]++;
+            this.updateMarkerPopup(marker, message);
+        });
+
+        this.markers.push(marker);
+    }
 
 
