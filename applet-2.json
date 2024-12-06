@@ -1,0 +1,17 @@
+[
+    {
+        "latitude":8.359879,
+        "longitude": 124.869242 ,
+        "message": "TEP Building"
+    },
+    {
+        "latitude": 8.359576,
+        "longitude": 124.869183,
+        "message": "CCS Building"
+    },
+    {
+        "latitude":8.359141,
+        "longitude": 124.868592,
+        "message": "BSBA Building"
+    }
+]
