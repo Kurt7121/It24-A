@@ -7,3 +7,6 @@ class LeafletMap {
         this.attendanceCountTEP = 0;
         this.attendanceCountCSS = 0;
         this.attendanceCountBA = 0;
+        this.markerCounts = {};
+        this.markers = [];
+        this.loggedData = []; 
