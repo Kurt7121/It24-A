@@ -94,5 +94,12 @@ class LeafletMap {
     }
 
     
+    dataBA() {
+        this.addMarker(8.359141, 124.868592, 'BA Building');
+        this.attendanceCountBA++;
+        this.updateLogDisplay();
+    }
+
+    
 
 
