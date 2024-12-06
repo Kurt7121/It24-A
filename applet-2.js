@@ -81,6 +81,12 @@ class LeafletMap {
         this.logCount2Element.innerHTML = `BA Building Attendance: ${this.attendanceCountBA}`;
     }
 
+    dataTEP() {
+        this.addMarker(8.359879, 124.869242, 'TEP Building');
+        this.attendanceCountTEP++; 
+        this.updateLogDisplay();
+    }
+
     
 
 
