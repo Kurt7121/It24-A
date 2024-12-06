@@ -101,5 +101,25 @@ class LeafletMap {
     }
 
     
+    updateLogDisplay() {
+        this.idContainer.innerHTML = ''; 
+        this.loggedData.forEach(data => {
+            const logItem = document.createElement('div');
+            logItem.className = 'log-item';
+            logItem.textContent = data; 
+            this.idContainer.appendChild(logItem);
+        });
+        this.displayLogCount();
+    }
+}
+    const Mymap = new LeafletMap('map', [8.359735, 124.869206], 18);
+    Mymap.loadMarkersFromJson('applet-2.json');
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        Mymap.displayLogCount();
+    });
+
+
+    
 
 
